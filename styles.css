@@ -1,5 +1,3 @@
-
-
 :root {
     --preto-fundo: #00030C;
     --branco-principal: #FFFFFF;
@@ -46,7 +44,7 @@ body {
 
 .container__imagem {
     margin: 1rem 0 2rem 0;
-    width: 100%;
+    width: 20vw;
 }
 
 .container__botao {
@@ -154,5 +152,72 @@ body {
 .rodape__texto {
     font-size: 14px;
     color: var(--cinza-secundario);
-    margin: 2rem  0;
+    margin: 2rem 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+/* ----- Primeira section responsivo----- */
+
+    .container {
+        display: block;
+        background-image: none;
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__caixa {
+        margin: 2rem 2rem;
+    }
+
+/* ----- Segunda section responsivo----- */
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+    }
+
+    .descricao__titulo {
+        font-size: 2rem;
+    }
+
+    .descricao__texto {
+        font-size: 1rem;
+    }
+
+/* ----- Quinta section responsivo----- */
+
+    .dispositivos__titulo {
+        font-size: 2rem;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .lista__item {        
+        font-size: 1rem;
+    }
+
+/* ----- Rodapé responsivo----- */
+
+    .rodape {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+
+    .lista__link {
+        margin-bottom: 2rem;
+    }
 }
